@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+form{
+    color:black;
+}
+header a, footer a{
+    text-decoration: none;
+}
+/*********************navbar*********************/
+nav{
+    position: fixed;
+    z-index: 1;
+}
+nav{
+    position: fixed;
+    width: 80%;
+    padding:2rem 10%;
+    background: rgba(0,0,0,0.1);
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+}
+.navbar .icon {
+    display: none;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding:5px 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+/********************hero-section****************/
+.hero-section{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/hero.jpg") no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:bottom;
+}
+.hero-title{
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation:sideways-right;
+    bottom: 50%;
+    transform: rotateZ(180deg) translateY(-40%);
+    height: 75%;
+    margin-left: 5%;
+}
+.hero-title h1{
+    font-size: 60px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    background: rgb(214 80 80 / 13%);
+    padding: 5px 0 5px 0;
+}
+footer div{
+    margin:5px;
+}
+.socials, .footer-links{
+    display: flex;
+    justify-content: center;
+}
+.socials div{
+    padding: 7px;
+    background: #8a4f10;
+    border-radius: 50%;
+}
+footer p{
+    display: block;
+    padding: 0 10px 0 10px;
+}
+
+/************************************about us page*************************************/
+.first-about{
+    padding:8rem 0 3rem 0;
+}
+.about-description{
+    position: relative;
+    background:#474543;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.about-description img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-description div:first-child{
+    width: 50%;
+}
+.about-description h1{
+    font-size: 40px;
+}
+.about-description div:nth-child(2){
+   padding: 2rem;
+   width: 50%;
+}
+.about-description div:nth-child(2) p{
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+    text-align: justify;
+}
+/******************team-section**************/
+.card-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin:0 20px;
+}
+.team{
+    padding-bottom: 3rem;
+}
+.card img{
+   width: 100%; height: 100%;
+   object-fit: cover;
+}
+.hidden-card{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 80%;
+    top: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 79px 14px;
+    visibility: hidden;
+    border: 1px solid white;
+}
+.hidden-card p{
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.card:hover .hidden-card{
+    visibility: visible;
+}
+iframe{
+    width: 100%;
+    height:250px;
+    margin-bottom: 8rem;
+}
+section{
+    background: #191919;
+}
+/*************************************page characters*************************/
+.charac, .fantastic-beast, .quizzes, .houses{
+    padding: 8rem 0;
+}
+.charac h1, .contact-us h1, .team h1, .map h1, .about-title, .fantastic-beast h1, .quizzes h1, .houses h1, .tableau h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 40px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.character-contain{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin:0 auto;
+    justify-items: center;
+    grid-gap: 2rem;
+}
+.characters-card{
+    display:flex;
+    max-width: 500px;
+    font-size: 20px;
+    background: #5a5954;
+}
+.left-card{
+    position: relative;
+    width: 50%;
+}
+.left-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-card{
+    padding: 1rem;
+}
+.right-card div{
+    margin: 12px 0;
+}
+.profession ul li{
+    list-style: none;
+}
+
+/**************************contact Us********************************/
+.contact-us{
+    min-height: 100vh;
+    padding-top: 8rem;
+}
+form div:first-child{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+}
+form div:first-child div{
+    display: flex;
+    flex-direction: column;
+}
+form div:first-child div > input{
+    width: 95%;
+    padding: 2px;
+    height: 25px;
+    margin: 5px 0;
+}
+
+.form{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+textarea{
+    width: 100%;
+    height:100px;
+}
+/*****************************fantastic animals******************************/
+.animals{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+}
+.animals-contain{
+    width: 30%;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.animals-contain img{
+    position: relative;
+    width:100%; height: 100%;
+    filter: grayscale(1);
+    object-fit: fill;
+}
+.animals-contain img:hover{
+    filter: inherit;
+}
+.visibility-animals{
+    position: absolute;
+    width: 90%; height: 40%;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 3px solid red;
+    background: rgb(214 80 80 / 13%);
+    visibility: hidden;
+}
+.visibility-animals p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.animals-contain:hover .visibility-animals{
+    visibility: visible;
+}
+
+/*************************quiz-card*****************************/
+.quizzes-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-items: center;
+}
+.quizzes-container a{
+    text-decoration: none;
+}
+.quiz{
+    background: #191919;
+}
+.quiz-card{
+    width: 80%;
+    height: 295px;
+    background: #ffffff1a;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.quiz-card:hover{
+    transform: scale(1.05);
+    background: #ffffff33;
+}
+.quiz-card p{
+    color: rgb(177, 173, 173);
+}
+.quiz-image{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.quiz-image img{
+    object-fit: cover;
+    width: 100%; height: 100%;
+}
+.quiz-text{
+    line-height: 30px;
+    margin-top: 25px;
+}
+.quiz-text p:first-child{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.quiz-text p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+/************************************************quizzes questions***********************************/
+.houses{
+    background:linear-gradient(to bottom, rgba(0 0 0 / 20%), rgba(0, 0, 0)), url("../img/night.avif");
+}
+fieldset {
+    border: 0;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+fieldset legend {
+    font-size: 25px;
+}
+.answer{
+   grid-template-columns: 1fr !important; 
+}
+.answer label{
+    color: #191919;
+}
+.answer__item {
+    background-color: #777773;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    margin: 0.25rem 0;
+}
+.answer:hover{
+    transform: scale(1.02);
+}
+
+/* Hide Radio Buttons and Submit Button */
+input[type="radio"], button {
+display: none;
+}
+
+/* Any correct answer on any answered question, highlight in light green */
+:valid .answer__item--is-correct { background-color: rgba(61, 181, 64, 0.6) }
+
+/* Show any extra explanatory text */
+.answer__reveal-text { display: none; }
+:valid .answer__reveal-text { display: block }
+
+/* Any chosen answer, highlight in red */
+:checked + .answer__item { color: #ffffff; background-color: #c70000 }
+
+/* Any correctly chosen answer, highlight in bright green */
+:checked + .answer__item--is-correct { background-color: #3db540; }
+
+/* Show the icon for the selected answer */
+:checked + .answer__item .answer__icon { display: inline-block }
+
+
+/* prevent chosing another answer once chosen */
+:valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
+:valid + .answer__item { pointer-events: none }
+
+/* keep track of score */
+form { counter-reset: quiz-score }
+:checked + .answer__item--is-correct { counter-increment: quiz-score }
+.score:after { content: counter(quiz-score) "/" attr(data-question-count) }
+
+/* show score once quiz has been completed */
+.message { display: none; }
+form:valid .message { 
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background: #c70000;
+}
+/*****************************************dynamic table****************************/
+.tableau form div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tableau{
+    padding-bottom: 8rem;
+}
+.tableau button{
+    display: inherit ;
+    color: black;
+    padding: 5px;
+    background: #696966;
+}
+.tableau button:hover{
+    background: white;
+}
+table{
+    width: 90%;
+    margin:0 auto;
+    border:3px solid white;
+    border-radius: 15px;
+}
+thead tr th{
+    background: #474543;
+    height:50px;
+    font-size: 22px;
+    font-weight: 100;
+}
+tbody tr td{
+    background-color: rgb(189 189 189 / 40%);
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    height: 40px;
+}
+
+td{
+    border:2px solid white;
+}
+.ajout-button{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+/************************************************media queries********************************/
+@media(max-width:983px){
+    .character-contain{
+        grid-template-columns: 1fr;
+    }
+    /******quiz page***/
+    .quizzes-container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+    /*********animals**********/
+    .animals{
+        width: 100%;
+    }
+    .animals-contain{
+        width: 40%;
+    }
+    /*****contact******/
+    .form{
+        width: 80%;
+    }
+    /**********about************/
+    .about-description{
+        flex-direction: column;
+        width: 90%;
+    }
+    .about-description div:first-child{
+        width: 100%;
+        height: 300px;
+    }
+    .about-description div:nth-child(2){
+        margin:0 auto;
+        padding: 2rem 0;
+        width: inherit;
+    }
+    .card-container{
+        width: 90%;
+    }
+    .card{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:800px){
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tableau form div:first-child{
+        flex-direction: column;
+    }
+    .tableau form div:first-child input{
+        width: 70%;
+    }/*****navbar****/
+    .nav-links{display: none;}
+    .responsive {
+        display:inherit !important;
+    }
+    .responsive .nav-links{
+        display: inherit;
+    }
+    .responsive .nav-links ul{
+        border:1px solid white;
+        margin-top: 2rem;
+        font-size: 18px;
+    }
+    .responsive .nav-links ul li{
+        display: block;
+    }
+    .responsive .nav-links ul li:hover{
+        background: #a51a1a95;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .charac h1, .contact-us h1, .team h1, .map h1, .about-title, .fantastic-beast h1, .quizzes h1, .houses h1, .tableau h1{
+        width: 80%;
+    }
+
+}
+@media(max-width:600px){
+    /*********index**************/
+    .hero-title{
+        position: relative;
+        text-align: center;
+        writing-mode: inherit;
+        width: 90%; height:50%;
+        left: 50%; top:50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin-left: 0;
+    }
+    .charac h1, .contact-us h1, .team h1, .map h1, .about-title, .fantastic-beast h1, .quizzes h1, .houses h1, .tableau h1{
+        width: 85%;
+        font-size: 28px;
+    }
+    /********************/
+    .quizzes-container{
+        grid-template-columns: 1fr;
+    }
+    .animals-contain{
+        width: 70%;
+    } 
+    /*****quizzes*****/
+    fieldset{
+        width: 90%;
+    }
+    /*****contact****/
+    .form{
+        width: 90%;
+    }
+    /*****about*****/
+    .about-description div:first-child{
+        height: 200px;
+    }
+    .about-description h1 {
+        font-size: 30px;
+    }
+    .about-description div:nth-child(2) p{
+        font-size: 15px;
+    }
+    .card{
+        width: 400px;
+        height: 400px;
+    }
+    .hidden-card{
+        padding: 39px 14px;
+    }
+}
+
+@media(max-width:460px){
+    /*********character****************/
+    .character-contain{
+        grid-gap: 1rem;
+    }
+    .characters-card{
+        flex-direction: column;
+    }
+    .left-card{
+        width: 100%; height: 50%;
+    }
+    /**********animals***********/
+    .animals-contain{
+        width: 85%;
+    }
+    .form{
+        padding-bottom: 15rem;
+    }
+    .card{
+        width: 300px;
+        height: 300px;
+    }
+    .hidden-card{
+        top:70px;
+    }
+    .hidden-card p{
+        font-size: 15px;
+    }
+    .footer-links{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:350px){
+    form div:first-child{
+        grid-template-columns: 1fr;
+    }
+
+}
